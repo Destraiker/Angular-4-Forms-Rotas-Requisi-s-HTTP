@@ -11,9 +11,10 @@ import { CommonModule } from '@angular/common';
 })
 export class CommentModule { }
 
-export interface Comment{
-  userId: number;
+export interface Comment {
+  postId: number;
   id: number;
-  title: string;
+  name: string;
+  email: string;
   body: string;
 }

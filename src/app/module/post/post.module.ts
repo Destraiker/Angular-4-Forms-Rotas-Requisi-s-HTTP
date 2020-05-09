@@ -9,12 +9,13 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
+
 export class PostModule { }
 
 export interface Post{
-  postId: number;
+  userId: number;
   id: number;
-  name: string;
-  email: string;
+  title: string;
   body: string;
+  exibirComentario: boolean;
 }
