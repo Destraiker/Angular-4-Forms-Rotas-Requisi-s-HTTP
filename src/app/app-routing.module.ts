@@ -7,7 +7,6 @@ import { PostComponent } from './post/post.component';
 import { CommentComponent } from './comment/comment.component';
 
 const routes: Routes = [
-  { path: 'nav' , component : NavComponent },
   { path: 'user' , component : UserComponent },
   { path: 'post' , component : PostComponent },
   { path: 'comment' , component : CommentComponent }

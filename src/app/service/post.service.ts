@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class PostService {
-  private JsonExample = 'https://jsonplaceholder.typicode.com/post/';
+  private JsonExample = 'https://jsonplaceholder.typicode.com/posts/';
 
   constructor(private http: HttpClient) { }
 
@@ -22,10 +22,10 @@ export class PostService {
   }
 
   async Post(obj){
-    //console.log("Inicializando o post");
+    console.log("Inicializando o post");
     let resposta = await this.http.post(this.JsonExample,obj,{observe: 'response'}).toPromise();    
-    //console.log("Post finalizado");
-    //console.log(resposta);
+    console.log("Post finalizado");
+    console.log(resposta);
     return resposta;
   }
 }
